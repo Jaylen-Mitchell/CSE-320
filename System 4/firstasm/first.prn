@@ -1,0 +1,34 @@
+ARM GAS  /tmp/ccM2jUv0.s 			page 1
+
+
+   1              	# 1 "first.S"
+   1              	@ 
+   1              	...
+   0              	
+   0              	
+   1              	/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
+   2              	@ My first assembly language program
+   3              	@ Name: 
+   4              	@
+   5              	
+   6              	.text
+   7              	.global first
+   8              	.global second
+   9              	
+  10              	first:
+  11 0000 0010A0E1 		mov r1, r0
+  12 0004 010080E0 	  add r0, r0, r1
+  13 0008 010080E0 	  add r0, r0, r1
+  14 000c 1EFF2FE1 	  bx lr
+  15              	second:
+  16 0010 010080E0 	  add r0, r0, r1
+  17 0014 1EFF2FE1 	  bx lr
+ARM GAS  /tmp/ccM2jUv0.s 			page 2
+
+
+DEFINED SYMBOLS
+             first.S:10     .text:00000000 first
+             first.S:15     .text:00000010 second
+             first.S:11     .text:00000000 $a
+
+NO UNDEFINED SYMBOLS
